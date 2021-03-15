@@ -1,0 +1,304 @@
+/*main colors: #0A868C, #1FCCD7*/
+
+
+.faicon{
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	width: 70px !important;
+}
+
+.footer__img{
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.reviews{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.review{
+	margin: 15px;
+}
+
+.send_message{
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 10px 30px;
+}
+
+.review__inner {
+	background: #fff;
+	padding: 20px;
+}
+.review__image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.review__image-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.review__text {
+	text-align: center;
+}
+.review__text-title {
+	font-weight: bold;
+	font-size: 25px;
+}
+.review__text-descr {
+	font-size: 18px;
+}
+
+.review__text-score{
+	margin-top: 14px;
+}
+
+.slider__item{
+   min-height: 600px;
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: cover;
+}
+
+.slick-arrow{
+   border: none;
+   outline: none;
+   background-color: transparent;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 5;
+   cursor: pointer;
+}
+
+.slick-next{
+   right: 20px;
+}
+.slick-prev{
+   left: 20px;
+}
+
+/*banner*/
+
+.banner {
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 120%;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5)
+}
+.banner__inner{
+	z-index: 5;
+}
+.banner__title {
+	margin-bottom: 5px;
+	font-size: 45px;
+}
+.banner__divide {
+	width: 125px;
+	height: 3px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.banner__text {
+	margin-top: 15px;
+	font-size: 20px;
+	width: 600px;
+}
+
+.banner__flag{
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 35px;
+	cursor: pointer;
+	color: #fff;
+
+	animation-name: down;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+
+@keyframes down {
+	0%{
+		bottom: 35px;
+	}
+	50%{
+		bottom: 15px;
+	}
+	90%{
+		bottom: 40px;
+	}
+	100%{
+		bottom: 35px;
+	}
+}
+
+
+/*doctors*/
+
+.doctors {
+	margin: 40px 0px;
+}
+.doctors__inner {}
+.doctors__management, .doctors__personal {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.doctor__manager, 
+.doctot__person {
+	margin: 10px;
+}
+.doctor__image {
+	width: 230px;
+	height: 270px;
+}
+.doctor__image-img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.doctor__name {
+	color: #1FCCD7;
+}
+.doctor__divide {}
+.doctor__spec {
+	max-width: 220px;
+}
+.doctor__feature {}
+
+.doctors__personal {
+	display: flex;
+}
+
+/*faq*/
+
+.questions {
+	margin: 40px 0px;
+}
+.questions__inner {}
+.question {
+	position: relative;
+	margin: 10px 0px;
+}
+.question__title {
+	display: block;
+	position: relative;
+}
+.question__title::after {
+	content: '+';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	font-size: 40px;
+	transition-duration: 0.3s;
+}
+.question__title-rotate::after{
+	transform: translateY(-50%) rotate(-45deg);
+}
+.question__title:hover::after {
+	font-size: 42px;
+	color: #000;
+	transition-duration: 0.3s;
+}
+.question__answer {
+	display: none;
+}
+
+.q_div{
+	height: 1.2px;
+	background-color: #000;
+}
+
+#content {
+	margin: 40px 0px;
+}
+
+.modal{
+	z-index: 10000;
+}
+
+.comment{
+	resize: vertical;
+}
+
+.soc_icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+/*Комментарии*/
+
+.doctor_comments {}
+.comments__inner {
+	
+}
+.doctor__comment {}
+.comment__ava {}
+.comment__body {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+}
+
+.new_comment{
+	animation-name: new_comment;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+
+.make__comment{
+	margin-top: 10px;
+}
+
+.service_width{
+	width: 100%;
+}
+
+@keyframes new_comment {
+	0%{
+		background-color: #eee;
+	}
+	100%{
+		background-color: #fff;
+	}
+}
