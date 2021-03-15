@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=cardio',
+    'dsn' => 'mysql:host=cardio;dbname=cardio',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8',
